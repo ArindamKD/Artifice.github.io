@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Queue Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-menu">
+    <div id="menu-content">
+      <img id="play-button" src="assets/Playnow.gif" alt="Play Now">
+    </div>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div id="timer">00:60</div>
+    <div id="image-queue"></div>
+    <img id="player" src="assets/player.gif" alt="Player" height="500" width="200">
+  </div>
+
+  <div id="end-screen" style="display: none;">
+    <div id="score-card">
+      <h1>TIME UP</h1>
+      <p id="real-hits">REAL ONES HIT: 0</p>
+      <p id="fake-hits">FAKE ONES HIT: 0</p>
+      <img id="retry-button" src="assets/Retry.gif" alt="Retry">
+    </div>
+  </div>
+
+  <audio id="bgm" src="assets/bgm.mp3" loop></audio>
+  <audio id="sfx-shoot" src="assets/shoot.mp3"></audio>
+  <audio id="sfx-hit" src="assets/hit.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

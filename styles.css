@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
+}
+
+#main-menu {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/background2.gif') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-content img {
+  cursor: pointer;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/background.gif') no-repeat center center;
+  background-size: cover;
+}
+
+#timer {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#image-queue {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 300px;
+  gap: 20px;
+}
+
+#player {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 120px;
+}
+
+.goldcoin {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('assets/goldcoin.gif') no-repeat center center;
+  background-size: contain;
+}
+
+.shrinking {
+  animation: shrink 0.5s forwards, bounce 0.5s ease-in-out;
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#end-screen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/background3.gif') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#end-screen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/background3.gif') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#score-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+#score-card h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#score-card p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+#score-card img {
+  cursor: pointer;
+}
